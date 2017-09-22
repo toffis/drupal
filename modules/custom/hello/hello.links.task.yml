@@ -1,0 +1,16 @@
+hello.hello:
+  route_name: hello.hello
+  base_route: hello.hello
+  title: Hi!
+  weight: 1
+
+hello.hello.calculator:
+  route_name: hello.calculator
+  base_route: hello.hello
+  title: Calculator
+  weight: 3
+
+hello.hello.couleurblock:
+  route_name: hello.admin.colorblock
+  base_route: system.themes_page
+  title: Couleur des blocs

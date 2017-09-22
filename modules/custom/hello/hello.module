@@ -1,0 +1,23 @@
+<?php
+use Drupal\node\NodeInterface;
+/**
+ * Implements hook_node_update().
+ * @param \Drupal\node\NodeInterface $node
+ */
+function hello_node_update(NodeInterface $node) {
+	//kint($node); exit();
+  $user = \Drupal::currentUser();
+  $database = \Drupal::database();
+
+  $database->insert('hello_node_history')
+    ->fields(array(
+      'nid' => $node->id(),
+      'uid' => $user->id(),
+      'update_time' => time(),
+    ))
+    ->execute();
+}
+
+function hello_preprocess_block(array &$variables){
+   // kint('test'); exit();
+}

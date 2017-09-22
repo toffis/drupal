@@ -1,0 +1,14 @@
+uuid: 56db8b0c-e261-4edc-a203-fd6738634e0c
+name: 'Drupal 8 site modifié'
+mail: mohamed.dioumassi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
